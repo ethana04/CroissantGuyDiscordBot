@@ -3,8 +3,8 @@ Just a lil guy trying to help =)
 
 
 ## Requirements
-- Python
-- environment variable : "TOKEN_BOT" (ask Emma for the token)
+- Python (all requirements are in the file requirements.txt)
+- environment variable : "TOKEN_BOT" (ask Emma for the token or use your own bot)
 
 ## Installation
 - Get the code (duh)
