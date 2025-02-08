@@ -2,16 +2,17 @@ import os
 import discord
 import json, random
 from discord.ext import commands
+# from keep_alive import keep_alive
 
 # Get the token from the environment variable
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.message_content = True
 
 # Link to json file
 links = json.load(open("gifs.json"))
 
 # Define bot instance
-bot = commands.Bot(command_prefix="/", intents=intents)
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Commands
 @bot.command()
@@ -39,4 +40,5 @@ async def on_message(message):
 
 # Run bot
 token = os.environ['TOKEN_BOT']
+# keep_alive()
 bot.run(token)
