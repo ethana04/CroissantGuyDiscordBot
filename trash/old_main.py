@@ -2,7 +2,11 @@ import os
 import discord
 import json, random
 from discord.ext import commands
+<<<<<<< HEAD:trash/old_main.py
 # from keep_alive import keep_alive
+=======
+from keep_alive import keep_alive
+>>>>>>> d1dffe763f336615c37f5a03a5667d298e7c2bf6:main.py
 
 # Get the token from the environment variable
 intents = discord.Intents.all()
@@ -40,5 +44,9 @@ async def on_message(message):
 
 # Run bot
 token = os.environ['TOKEN_BOT']
+<<<<<<< HEAD:trash/old_main.py
 # keep_alive()
+=======
+keep_alive()
+>>>>>>> d1dffe763f336615c37f5a03a5667d298e7c2bf6:main.py
 bot.run(token)
