@@ -26,8 +26,22 @@ class EventsCog(commands.Cog) :
         embed3.add_field(name="", value="The tree is here : <#1007660806118309961>", inline=False)
         await  message.channel.send(embed=embed3)
       if "AHH" in message.content.upper() :
-        embed4 = discord.Embed(colour = getDefaultEmbedColour(), title="AAAHHHHHHHHH", description="AAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
+        file4 = discord.File("media/goat.jpg", filename="goat.jpg")
+        embed4 = discord.Embed(colour = getDefaultEmbedColour(), title="AAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
+        # embed4.set_thumbnail(url="attachment://goat.jpg")
+        # await message.channel.send(file=file4, embed=embed4)
         await message.channel.send(embed=embed4)
+      if message.author.name == "suitcasewean" and  "ANANAS" in message.content.upper():
+        file5 = discord.File("media/ananas.gif", filename="ananas.gif")
+        embed5 = discord.Embed(colour = getDefaultEmbedColour())
+        embed5.set_image(url="attachment://ananas.gif")
+        await message.channel.send(file = file5, embed=embed5)
+      if "OLA" in message.content.upper() :
+        file6 = discord.File("media/nerd_face.jpg", filename="nerd_face.jpg")
+        embed6 = discord.Embed(colour = getDefaultEmbedColour(), title="You spelled Hola wrong !")
+        # embed6.set_image(url="attachment://nerd_face.jpg")
+        # await message.channel.send(file=file6, embed=embed6)
+        await message.channel.send(embed=embed6)
 
 async def setup(bot) :
   await bot.add_cog(EventsCog(bot))
