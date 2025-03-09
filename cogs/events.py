@@ -48,5 +48,10 @@ class EventsCog(commands.Cog) :
         # await message.channel.send(file=file6, embed=embed6)
         await message.channel.send(embed=embed6)
 
+      if "POWERPLAY" in message.content.upper() or "POWER PLAY" in message.content.upper() :
+        embed7 = discord.Embed(colour = getDefaultEmbedColour(), title="This power play was brought to you by the Royale® Tiger Towel® Paper Towel")
+        await message.channel.send(embed=embed7)
+
+
 async def setup(bot) :
   await bot.add_cog(EventsCog(bot))
