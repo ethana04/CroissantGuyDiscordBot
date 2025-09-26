@@ -52,7 +52,7 @@ class EventsCog(commands.Cog) :
         embed7 = discord.Embed(colour = getDefaultEmbedColour(), title="This power play was brought to you by the Royale® Tiger Towel® Paper Towel")
         await message.channel.send(embed=embed7)
 
-      if message.author.name == "antlerhunter" and  "AGATHA" in message.content.upper():
+      if message.author.name == "antlerhunter" and  "AGATHA ALL ALONG" in message.content.upper():
         file8 = discord.File("media/agatha.jpg", filename="agatha.jpg")
         embed8 = discord.Embed(colour = getDefaultEmbedColour())
         embed8.set_image(url="attachment://agatha.jpg")
